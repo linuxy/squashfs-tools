@@ -6666,8 +6666,8 @@ static void print_sqfstar_options(FILE *stream, char *name, int total_mem)
 
 static void print_version(char *string)
 {
-	printf("%s version " VERSION " (" DATE ")\n", string);
-	printf("copyright (C) " YEAR " Phillip Lougher ");
+	// printf("%s version " VERSION " (" DATE ")\n", string);
+	// printf("copyright (C) " YEAR " Phillip Lougher ");
 	printf("<phillip@squashfs.org.uk>\n\n");
 	printf("This program is free software; you can redistribute it and/or\n");
 	printf("modify it under the terms of the GNU General Public License\n");
@@ -7630,7 +7630,7 @@ print_sqfstar_compressor_options:
 }
 
 
-int main(int argc, char *argv[])
+int cmain(int argc, char *argv[])
 {
 	struct stat buf, source_buf;
 	int res, i;
